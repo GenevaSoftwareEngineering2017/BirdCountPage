@@ -30,7 +30,7 @@ th {
     height: 50px;
   font: 100em;
   color: white;
-  background-color: black;
+  background-color: #A9A9A9;
 }
 tr:hover {background-color: #f5f5f5}
 
