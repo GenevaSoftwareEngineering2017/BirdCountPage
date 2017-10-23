@@ -29,6 +29,8 @@ table {
 th {
     height: 50px;
   font: 100em;
+  color: white;
+  background-color: black;
 }
 tr:hover {background-color: #f5f5f5}
 
