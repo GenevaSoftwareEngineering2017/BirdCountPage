@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-current',
+  templateUrl: './current.component.html',
+  styleUrls: ['./current.component.css'],
   styles: [`
     h1 {
         text-decoration:underline;
@@ -73,9 +73,14 @@ ul {
 }
 
 `]
-     
-   
+
+
 })
-export class AppComponent {
-  title = 'app';
+export class CurrentComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }

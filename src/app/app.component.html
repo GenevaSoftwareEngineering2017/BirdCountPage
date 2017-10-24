@@ -1,53 +1,74 @@
 <!--<link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="skeleton.css">-->
-<nav>
-  <br/>
-  <br />
-  <br />
-  <br />
-  <ul>
-    <li><img src="http://www.clker.com/cliparts/3/f/e/b/13343480101926659497Green%20Bird%20House.svg.hi.png" alt="Bird Count App" height="100" width="100"></li>
-    <br/>
-    <li>
-      <a href="current.html">Current</a>
-    </li>
-    <li>
-      <a href="statistics.html">Statistics</a>
-    </li>
-    <li>
-      <a href="past.html">Past Years</a>
-    </li>
-  </ul>
-</nav>
+<base href="/" />
+  <nav id="navbar">
+    <br />
+    <br />
+    <br />
+    <br />
+    <ul>
+      <li><img src="http://www.clker.com/cliparts/3/f/e/b/13343480101926659497Green%20Bird%20House.svg.hi.png" alt="Bird Count App" height="100" width="100"></li>
+      <br />
+      <li>
+        <a routerLink="/current" routerLinkActive="active">Current</a>
+      </li>
+      <li>
+        <a routerLink="/statistics" routerLinkActive="active">Statistics</a>
+      </li>
+      <li>
+        <a routerLink="/past" routerLinkActive="active">Past Years</a>
+      </li>
+    </ul>
+  </nav>
 <br class="clearit" />
-<div class="birdTableList">
-  <h1>Bird List</h1>
+<div class="TableList">
+  <h1>Team Data List</h1>
   <table>
-    <tr>
-      <th><strong>Bird Type</strong></th>
-      <th><strong>Etc.</strong></th>
-      <th><strong>Etc.</strong></th>
-      <th><strong>Etc.</strong></th>
+    <tr >
+      <td><strong>1</strong></td>
+      <td><strong><a routerLink="/example" routerLinkActive="active">Team Name</a></strong></td>
+      <td><strong>Date</strong></td>
+      <td><strong>Etc.</strong></td>
     </tr>
     <tr>
-      <td>Duck</td>
-      <td>Etc.</td>
-      <td>Etc.</td>
-      <td>Etc.</td>
+      <td><strong>2</strong></td>
+      <td><strong>Team Name</strong></td>
+      <td><strong>Date</strong></td>
+      <td><strong>Etc.</strong></td>
     </tr>
     <tr>
-      <td>Goose</td>
-      <td>Etc.</td>
-      <td>Etc.</td>
-      <td>Etc.</td>
+      <td><strong>3</strong></td>
+      <td><strong>Team Name</strong></td>
+      <td><strong>Date</strong></td>
+      <td><strong>Etc.</strong></td>
     </tr>
-    <tr>
-      <td>Chicken</td>
-      <td>Etc.</td>
-      <td>Etc.</td>
-      <td>Etc.</td>
-    </tr>
-  </table>
+</table>
+    <!--<table>
+      <tr>
+        <th><strong>Bird Type</strong></th>
+        <th><strong>Etc.</strong></th>
+        <th><strong>Etc.</strong></th>
+        <th><strong>Etc.</strong></th>
+      </tr>
+      <tr>
+        <td>Duck</td>
+        <td>Etc.</td>
+        <td>Etc.</td>
+        <td>Etc.</td>
+      </tr>
+      <tr>
+        <td>Goose</td>
+        <td>Etc.</td>
+        <td>Etc.</td>
+        <td>Etc.</td>
+      </tr>
+      <tr>
+        <td>Chicken</td>
+        <td>Etc.</td>
+        <td>Etc.</td>
+        <td>Etc.</td>
+      </tr>
+    </table>-->
 </div>
 
 
