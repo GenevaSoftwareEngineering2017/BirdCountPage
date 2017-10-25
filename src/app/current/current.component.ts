@@ -68,7 +68,7 @@ ul {
     position: fixed; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
-.TableList{
+.pageContent{
     margin-left: 12%;
 }
 
