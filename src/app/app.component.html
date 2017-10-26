@@ -1,21 +1,23 @@
-<base href="/" />
-  <nav id="navbar">
-    <br />
-    <br />
-    <br />
-    <br />
-    <ul>
-      <li><img src="http://www.clker.com/cliparts/3/f/e/b/13343480101926659497Green%20Bird%20House.svg.hi.png" alt="Bird Count App" height="100" width="100"></li>
-      <br />
-      <li>
-        <a routerLink="/current" routerLinkActive="active">Current</a>
-      </li>
-      <li>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/current">Bird Count Compilier</a>
+    </div>
+    <ul class="nav navbar-nav">
+	<li>
+      <a routerLink="/current" routerLinkActive="active">Current</a>
+	  </li>
+       <li>
         <a routerLink="/statistics" routerLinkActive="active">Statistics</a>
       </li>
       <li>
         <a routerLink="/past" routerLinkActive="active">Past Years</a>
       </li>
     </ul>
-  </nav>
-<router-outlet></router-outlet>
+  </div>
+</nav>
+<router-outlet>
+<br/>
+<br/>
+<br/>
+</router-outlet>
