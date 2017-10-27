@@ -10,6 +10,7 @@ import { PastComponent } from './past/past.component';
 import { FormComponent } from './form/form.component';
 import { CompileComponent } from './compile/compile.component';
 import { PastexampleComponent } from './pastexample/pastexample.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
     { path: 'current', component: CurrentComponent },
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     { path: 'example', component: ExampleComponent},
 	{ path: 'form', component: FormComponent},
 	{ path: 'compile', component: CompileComponent},
-	{ path: 'pastexample', component: PastexampleComponent}
+	{ path: 'pastexample', component: PastexampleComponent},
+	{ path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
@@ -30,7 +32,8 @@ const appRoutes: Routes = [
     PastComponent,
     FormComponent,
     CompileComponent,
-    PastexampleComponent
+    PastexampleComponent,
+    LoginComponent
   ],
   imports: [
       BrowserModule,
