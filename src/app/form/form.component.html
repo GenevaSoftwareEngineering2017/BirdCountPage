@@ -1,73 +1,144 @@
 <div class="container-fliud">
-<h1>Add A Team</h1>
-<br>
-<label><b>Team Name:</b></label>
-    <input type="text" placeholder="Team Name" name="FirstName" required>
-<br>	
-<br>	
-<h1>Team Members</h1>
-<br>
+<h1>Mail-in Add Form</h1>
+<br/>
+<h4>Team Name:</h4>
+ <input type="text" required="" placeholder="Team Name" value="" name="team" style="margin-left: 7px; margin-bottom:15px;">
+ <h4>Form Type:</h4>
+ <div style="margin-left: 7px; margin-bottom:15px;">
+  <label style="padding-right: 10px;">
+    <input type="radio" name="options" id="Field" autocomplete="off" checked> Field
+  </label>
+  <label>
+    <input type="radio" name="options" id="Feeder" autocomplete="off"> Feeder
+  </label>
+  </div>
+	<h4>Party Members:</h4>
+		<div class="form_main">
+                <form>
+				<table class="table">
+				<tr>
+                    <th>Name 1:</th>
+                    <th>Name 2:</th>
+					<th>Name 3:</th>
+			        <th>Name 4:</th>
+					</tr>
+					<tr>
+					<td> <input type="text" required="" placeholder="Name 1" value="" name="name1"></td>
+					<td> <input type="text" required="" placeholder="Name 2" value="" name="name2" ></td>
+					<td> <input type="text" required="" placeholder="Name 3" value="" name="name3" ></td>
+					<td> <input type="text" required="" placeholder="Name 4" value="" name="name4" ></td>
+					</tr>
+				</table>
+					<h4>Effort:</h4>
+					<table class="table">
+					<tr>
+					<th>Start Time 1:</th>
+                    <th>Start Time 2:</th>
+					<th>End Time 1:</th>
+			        <th>End Time 2:</th>
+					<th></th>
+					<th></th>
+					</tr>
+					<tr>
+					<td> <input type="text" required="" placeholder="Start Time 1" value="" name="start1"></td>
+					<td> <input type="text" required="" placeholder="Start Time 2" value="" name="start2" ></td>
+					<td> <input type="text" required="" placeholder="End TIme 1" value="" name="end1" ></td>
+					<td> <input type="text" required="" placeholder="End Time 2" value="" name="end2" ></td>
+					<td></td>
+					<td></td>
+					</tr>				
+					<tr>
+					<th>Day Miles Driven:</th>
+                    <th>Day Hours Driven:</th>
+					<th>Day Miles Walked:</th>
+			        <th>Day Hours Walked:</th>
+					<th>Miles Owling:</th>
+			        <th>Hours Owling:</th>
+					</tr>
+					<tr>
+					<td> <input type="text" required="" placeholder="Day Miles Driven" value="" name="milesdriven"></td>
+					<td> <input type="text" required="" placeholder="Day Hours Driven" value="" name="hoursdriven" ></td>
+					<td> <input type="text" required="" placeholder="Day Miles Walked" value="" name="mileswalked" ></td>
+					<td> <input type="text" required="" placeholder="Day Hours Walked" value="" name="hourswalked" ></td>
+					<td> <input type="text" required="" placeholder="Miles Owling" value="" name="milesowling" ></td>
+					<td> <input type="text" required="" placeholder="Hours Owling" value="" name="hoursowling" ></td>
+					</tr>
+					</table>
+				<h4>Bird Count:</h4>	
 <table class="table table-hover">
   <tr>
-    <th><strong>Member Name</strong></th>
-    <th><strong>Member Email</strong></th>
-	<th><strong>Member Address</strong></th>
-	<th><strong>Member Phone#</strong></th>
+    <th><strong>Bird Type</strong></th>
+    <th><strong>Total</strong></th>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Snow Goose</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Canada Goose</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Wood Duck</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>AM Black Duck</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Mallard</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Canvasback</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Com Goldeneye</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Hood Merganser</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
   <tr>
-    <td><input type="text" placeholder="Enter Name" name="MemberName" required></td>
-	<td><input type="text" placeholder="Enter Email" name="Email" required></td>
-	<td><input type="text" placeholder="Enter Address" name="Address" required></td>
-	<td><input type="text" placeholder="Enter Phone#" name="Phone" required></td>
+    <td>Com Merganser</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
+  </tr>
+  <tr>
+    <td>R-B Merganser</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
+  </tr>
+  <tr>
+    <td>Wild Turkey</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
+  </tr>
+  <tr>
+    <td>PB Grebe</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
+  </tr>
+  <tr>
+    <td>Gr Blue Heron</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
+  </tr>
+  <tr>
+    <td>Bald Eagle</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
+  </tr>
+  <tr>
+    <td>Northern Harrier</td>
+    <td> <input type="number" required="" placeholder="Bird Count" value="" name="totalcount" ></td>
   </tr>
 </table>
-<button type="button" class="btn btn-lg" style="float: right"><a routerLink="/current" routerLinkActive="active">Add Team</a></button>
+<h4>Comments:</h4>
+ <textarea placeholder="Comments" name="comment" type="text" style="width:98%; height:100px; margin-left: 7px;"></textarea>
+ </form>
 </div>
+<br/>
+<button type="button" class="btn btn-lg" style="float: right"><a routerLink="/current" routerLinkActive="active">Add to Team List</a></button>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
