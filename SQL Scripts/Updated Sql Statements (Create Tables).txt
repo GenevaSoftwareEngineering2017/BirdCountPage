@@ -1,0 +1,88 @@
+Create Table Teams
+(
+	TeamID int IDENTITY(1,1) Primary Key,
+	TeamName varchar(225) Not Null,
+	MethodType varchar(225) Not Null, --Feeder/Field
+);
+
+Create Table Team_Members
+(
+	MemberID int IDENTITY(1,1) Primary Key,
+	FullName varchar (225) Not Null,
+	HomeAddress varchar (225)Not Null,
+	Email varchar (225)Not Null,
+	PhoneNumber int Not Null,
+	TeamID int Not Null,
+	FOREIGN KEY(TeamID) REFERENCES Teams(TeamID)
+);
+
+Create Table Birds
+(
+	BirdID int IDENTITY(1,1) Primary Key,
+	BirdName varchar(225),
+);
+
+Create Table Count
+(
+    CountID int IDENTITY(1,1) Primary Key,
+    TeamID int Not Null,
+    BirdID int Not Null,
+    TeamName varchar (225)Not Null,
+    BirdName varchar (225),
+    Count int Not Null,
+    Foreign Key (TeamID) References Teams(TeamID),
+    Foreign Key (BirdID) References Birds(BirdID),
+);
+
+Create Table Weather
+(
+	WeatherID int IDENTITY(1,1) Primary Key,
+	LowTemp decimal,
+	HighTemp decimal,
+	WindDirection varchar(225),
+	LowWind decimal,
+	HighWind decimal,
+	SnowMinDepth decimal,
+	SnowMaxDepth decimal,
+	StillWater varchar(225),
+	MovingWater varchar(225),
+	AMCloud varchar(225),
+	PMCloud varchar(225),
+	AMRain varchar(225),
+	PMRain varchar(225),
+	AMSnow varchar(225),
+	PMSnow varchar(225)
+);
+
+Create Table Effort
+(
+	EffortID int IDENTITY(1,1) Primary Key,
+	StartTime Time,
+	EndTime Time,
+	DayMilesDriven int,
+	DayHoursDriven int,
+	DayMilesWalked int,
+	DayHoursWalked int,
+	MilesOwling int,
+	HoursOwling int,
+	TeamID int,
+	FOREIGN KEY(TeamID) REFERENCES Teams(TeamID)
+);
+
+*******Create Table Compiled
+(
+    CompiledID int IDENTITY(1,1) Primary Key,
+    TotalCounts int,
+    FieldParties int,
+    FieldParticipants int,
+    FootMiles decimal,
+    FootHours decimal,
+    CarMiles decimal,
+    CarHours decimal,
+    OwlMiles decimal,
+    OwlHours decimal,
+    FeederCount int,
+    FeederPart int,
+    WeatherID int,
+    Foreign Key (WeatherID) References Weather(WeatherID),
+); ------Compiled button will select all information from tables and put it onto one page

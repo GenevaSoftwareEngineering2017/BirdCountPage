@@ -1,0 +1,90 @@
+Insert into Weather(LowTemp, HighTemp, WindDirection, LowWind, HighWind, SnowMinDepth, SnowMaxDepth, StillWater, MovingWater, AMCloud, PMCloud, AMRain, PMRain, AMSnow, PMSnow)
+
+Values ('30', '40', 'North', '5', '15', '0', '12', 'Yes', 'No', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes');
+
+Insert into Effort(StartTime, EndTime, DayMilesDriven, DayHoursDriven, DayHoursWalked, DayMilesWalked, MilesOwling, HoursOwling, TeamId)
+
+Values ('8:00', '14:00', '109', '2', '4', '8', '0', '0','4');
+
+Insert into Count(TeamID, BirdID, TeamName, Count, BirdName)
+
+Values ('1','6','Team Jamin','81','Wild Turkey')
+
+Insert into Team_Members(FullName, HomeAddress, Email, PhoneNumber,TeamID)
+Values ('Kevin','P-Sherman 42 wallabe way sydney','kevin@yahoo.com','736-534-7854','1'),
+('Jacob Girvin','429 Newell Rd.','jacob@yahoo.com','724-876-1543)','2');
+
+Insert into Teams (TeamName, MethodType)
+Values ('Team Girvin','Field'),('Team Maus','Feeder'),('Team Jamin','Feeder'),('Team Kevin'.'Field'),('Team Jesse','Feeder'),('Team Sam','Field'),('Team Joel','Field');
+
+Insert Into Birds (BirdName)
+Values ('Canada Goose'),
+('Am Black Duck'),
+('Mallard'),
+('Northern Pintail'),
+('Hood Merganser'),
+('Wild Turkey'),
+('Gr Blue Heron'),
+('Bald Eagle'),
+('Nothern Harrier'),
+('Sh-Shinned Hawk'),
+('Coopers Hawk'),
+('Red-Tailed Hawk'),
+('Amer Kestral'),
+('Peregrine Falcon'),
+('Killdeer'),
+('Ring-Billed Gull'),
+('Herring Gull'),
+('Rock Pigeon'),
+('Mourning Dove'),
+('Belt Kingfisher'),
+('Red-Bellied WP'),
+('Downey WP'),
+('Hairy WP'),
+('Northern Flicker'),
+('Pileated WP'),
+('Blue Jay'),
+('American Crow'),
+('Common Raven'),
+('Horned Lark'),
+('Carolina Chick'),
+('B-C Chickadee'),
+('Chickadee Sp'),
+('Tufted Titmouse'),
+('Wh-br Nuthatch'),
+('Brown Creeper'),
+('Carolina Wren'),
+('Gold-cr Kinglet'),
+('Eastern Bluebird'),
+('American Robin'),
+('N Mockingbird'),
+('Europ Starling'),
+('American Pipit'),
+('Yel-Rump Warb'),
+('Am Tree Sparrow'),
+('Song Sparrow'),
+('Wh-thro Sparrow'),
+('Wh-cro Sparrow'),
+('Dark-Eyed Junco'),
+('Snow Bunting'),
+('North Cardinal'),
+('Common Grackle'),
+('Br-head Cowbird'),
+('House Finch'),
+('Pine Siskin'),
+('Amer Goldfinch'),
+('House Sparrow');
+
+insert into Compiled
+(fieldParties)
+select count('x') from Teams
+
+insert into Compiled
+(TotalCounts)
+select 
+Sum(Count)
+from Count 
+
+Insert (FieldParties, TotalCounts)
+values (@Parties, @Count)
+
