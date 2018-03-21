@@ -1,0 +1,86 @@
+create table Teams
+(
+	TeamID int IDENTITY(1,1) Not Null Primary Key,
+	TeamName varchar(225) Not Null,
+	MethodType varchar(225) Not Null, --Feeder/Field
+);
+
+Create Table Team_Members
+(
+	MemberID int IDENTITY(1,1) Not Null Primary Key,
+	FullName varchar (225) Not Null,
+	HomeAddress varchar (225)Not Null,
+	Email varchar (225)Not Null,
+	PhoneNumber int Not Null,
+	TeamID int FOREIGN KEY REFERENCES Teams(TeamID) Not Null
+);
+
+--Create Table Effort
+--(
+--	EffortID int IDENTITY(1,1) Not Null Primary Key,
+--	StartTime Time Not Null,
+--	EndTime Time Not Null,
+--	DayMilesDriven int Not Null,
+--	DayHoursDriven int Not Null,
+--	DayMilesWalked int Not Null,
+--	DayHoursWalked int Not Null,
+--	MilesOwling int Not Null,
+--	HoursOwling int Not Null,
+--	TeamID int FOREIGN KEY REFERENCES Teams(TeamID) Not Null
+--);
+
+--Create Table Birds
+--(
+--	BirdID int IDENTITY(1,1) Not Null Primary Key,
+--	BirdName varchar(225) Not Null,
+--);
+
+--Create Table Counts
+--(
+--    CountID int IDENTITY(1,1) Not Null Primary Key,
+--    TeamName varchar (225)Not Null,
+--    BirdName varchar (225),
+--    Counts int Not Null,
+--    TeamID int FOREIGN KEY REFERENCES Teams(TeamID) Not Null,
+--    BirdID int FOREIGN KEY REFERENCES Birds(BirdID) Not Null
+--);
+
+--Create Table Weather
+--(
+--	WeatherID int IDENTITY(1,1) Not Null Primary Key,
+--	LowTemp decimal,
+--	HighTemp decimal,
+--	WindDirection varchar(225),
+--	LowWind decimal,
+--	HighWind decimal,
+--	SnowMinDepth decimal,
+--	SnowMaxDepth decimal,
+--	StillWater varchar(225),
+--	MovingWater varchar(225),
+--	AMCloud varchar(225),
+--	PMCloud varchar(225),
+--	AMRain varchar(225),
+--	PMRain varchar(225),
+--	AMSnow varchar(225),
+--	PMSnow varchar(225)
+--);
+
+--*******Create Table Compiled
+--(
+--    CompiledID int IDENTITY(1,1) Not Null Primary Key,
+--    TotalCounts int,
+--    FieldParties int,
+--    FieldParticipants int,
+--    FootMiles decimal,
+--    FootHours decimal,
+--    CarMiles decimal,
+--    CarHours decimal,
+--    OwlMiles decimal,
+--    OwlHours decimal,
+--    FeederCount int,
+--    FeederPart int,
+--    WeatherID int Foreign Key References Weather(WeatherID),
+--); ------Compiled button will select all information from tables and put it onto one page
+
+Compiled table needs t0 be loked at more. We need to figure out how we want the table to look 
+and how the information will be called into it.
