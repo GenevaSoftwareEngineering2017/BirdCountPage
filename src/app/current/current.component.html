@@ -1,6 +1,18 @@
   <div class="container-fluid">
   <h1>Teams List</h1>
   <table class="table table-hover">
+  <tr>
+  <th>ID</th>
+  <th>Team Name</th>
+  <th>Method</th>
+  </tr>
+  <tr *ngFor="let team of data">
+  <td>{{team.Id | json}}</td>
+  <td>{{team.Name | json}}</td>
+  <td>{{team.Method | json}}</td>
+  </tr>
+</table>
+<!--  <table class="table table-hover">
     <tr>
       <td><strong>1</strong></td>
       <td><strong><a routerLink="/example" routerLinkActive="active">Team Maus</a></strong></td>
@@ -26,7 +38,7 @@
        <td><strong><a routerLink="/example" routerLinkActive="active">Team Jamin</a></strong></td>
       <td><strong>10/27/2017</strong></td>
     </tr>
-  </table>
+  </table> -->
   <button type="button" class="btn"><a routerLink="/form" routerLinkActive="active">+</a></button>
   <br/>
   <button type="button" class="btn btn-lg" style="float: right"><a routerLink="/compile" routerLinkActive="active">Compile</a></button>
