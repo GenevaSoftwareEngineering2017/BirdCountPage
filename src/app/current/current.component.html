@@ -8,7 +8,7 @@
   </tr>
   <tr *ngFor="let team of data">
   <td>{{team.Id | json}}</td>
-  <td>{{team.Name | json}}</td>
+  <td><a routerLink="/example" routerLinkActive="active">{{team.Name | json}}</a></td>
   <td>{{team.Method | json}}</td>
   </tr>
 </table>
