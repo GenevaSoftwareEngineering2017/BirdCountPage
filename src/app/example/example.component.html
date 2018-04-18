@@ -5,6 +5,67 @@
   <tr>
 	<th><strong>Name</strong></th>
 	<th><strong>Email</strong></th>
+  <th><strong>Home Address</strong></th>
+  <th><strong>Phone Number</strong></th>
+  </tr>
+<tr *ngFor="let member of data">
+<td>{{member.FullName | json}}</td>
+<td>{{member.Email | json}}</td>
+<td>{{member.HomeAddress | json}}</td>
+<td>{{member.PhoneNumber | json}}</td>
+</tr>
+</table>
+<h4>Start and End</h4>
+<table class="table table-hover">
+<tr>
+<th><strong>Start Time 1</strong></th>
+<th><strong>Start Time 2</strong></th>
+<th><strong>End Time 1</strong></th>
+<th><strong>End Time 2</strong></th>
+</tr>
+<tr *ngFor="let time of data2">
+<td>{{time.CountStart | json}}</td>
+<td></td>
+<td>{{time.CountEnd | json}}</td>
+<td></td>
+</tr>
+</table>
+<h4>Effort</h4>
+<table class="table table-hover">
+  <tr>
+	<th><strong>Day Miles Driven</strong></th>
+	<th><strong>Day Hours Driven</strong></th>
+	<th><strong>Day Miles Walked</strong></th>
+	<th><strong>Day Hours Walked</strong></th>
+	<th><strong>Miles Owling</strong></th>
+	<th><strong>Hours Owling</strong></th>
+  </tr>
+  <tr *ngFor="let effort of data2">
+  <td>{{effort.DayHoursDriven | json}}</td>
+  <td>{{effort.DayHoursWalked | json}}</td>
+  <td>{{effort.DayMilesDriven| json}}</td>
+  <td>{{effort.DayMilesWalked| json}}</td>
+  <td>{{effort.MilesOwling | json}}</td>
+  <td>{{effort.HoursOwling | json}}</td>
+  </tr>
+</table>
+<h2>Bird Count Data</h2>
+<table class="table table-hover">
+  <tr>
+    <th><strong>Bird Type</strong></th>
+    <th><strong>Total</strong></th>
+	<th><strong>Delete?</strong></th>
+  </tr>
+  <tr *ngFor="let count of data3">
+  <td>{{count.BirdName | json}}</td>
+  <td>{{count.BirdCount | json}}</td>
+  <td><button type="button" class="btn">X</button></td>
+  </tr>
+</table>
+<!--<table class="table table-hover">
+  <tr>
+	<th><strong>Name</strong></th>
+	<th><strong>Email</strong></th>
   </tr>
   <tr>
     <td>Jim Bob</td>
@@ -52,7 +113,7 @@
 	<td></td>
 	<td></td>
   </tr>
-  
+
  </table>
 <h2>Bird Count Data</h2>
 <table class="table table-hover">
@@ -136,7 +197,7 @@
     <td>12</td>
 	<td><button type="button" class="btn">X</button></td>
   </tr>
-</table>
+</table>-->
 <button type="button" class="btn btn-lg" style="float: right"><a routerLink="/current" routerLinkActive="active">Save</a></button>
   </div>
   <br/>
